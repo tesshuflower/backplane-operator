@@ -47,7 +47,7 @@ const (
 
 // cluster-proxy-addon
 //+kubebuilder:rbac:groups=route.openshift.io,resources=routes,verbs=get;create;update;list;watch;delete;patch
-//+kubebuilder:rbac:groups=proxy.open-cluster-management.io,resources=managedproxyconfigurations;managedproxyserviceresolvers,verbs=get;create;update;list;watch;delete;patch
+//+kubebuilder:rbac:groups=proxy.open-cluster-management.io,resources=managedproxyconfigurations,verbs=get;create;update;list;watch;delete;patch
 
 var resources = []string{
 	"AddOnDeploymentConfig",
@@ -62,7 +62,6 @@ var resources = []string{
 	"CustomResourceDefinition",
 	"Deployment",
 	"ManagedProxyConfiguration",
-	"ManagedProxyServiceResolver",
 	"MutatingWebhookConfiguration",
 	"Namespace",
 	"NetworkPolicy",
